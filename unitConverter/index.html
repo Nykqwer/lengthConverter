@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+   
+        <div class="container">
+            <h1>LENGTH CONVERTER</h1>
+            <div class="flex">
+                <div class="in-container">
+                    <div class="convert-flex">
+                        <div style=" font-size: 16px; font-weight: 500;">
+                            From:
+                        </div>
+             <div>
+                <select class="dropdown" onchange="getValue()">
+                    <option value="millimeter">Millimeter</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="meter">Meter</option>
+                    <option value="mile">Mile</option>
+                    <option value="yard">Yard</option>
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                    
+                    
+                </select>
+             </div>
+                        <div>
+                           <input id="input-from" class="input-el" type="text" placeholder="Input Length" onclick="getValue()">
+                        </div>
+                    </div>
+                    <div class="convert-flex">
+                        <div style=" font-size: 16px; font-weight: 500;">
+                            To:
+                        </div>
+             <div>
+                <select class="dropdown1">
+                    <option value="centimeter">Centimeter</option>
+                    <option value="millimeter">Millimeter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="meter">Meter</option>
+                    <option value="mile">Mile</option>
+                    <option value="yard">Yard</option>
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+    
+                </select>
+             </div>
+                        <div>
+                           <input id="input-to" class="input-el" type="text" placeholder="Output">
+                        </div>
+                 
+                    </div>
+                    <div class="btn-flex">
+                        <button id="btn-reset">
+                            Reset
+                        </button>
+                        <button id="btn-cal">
+                            Calculate
+                        </button>
+                    </div>
+                    
+                </div>
+                
+                <div class="other-container">
+                    <div>
+                       REMINDER
+                    </div>
+                    <div class="reminder">
+                        <div>
+                          <div class="item">
+                   Imperial measurement of length
+                 </div>
+               <div class="item">
+                  1 inch
+                     </div>
+                       <div class="item">
+                           1 foot
+                         </div>
+                         <div class="item">
+                            1 yard	
+                         </div>
+                         <div class="item">
+                            1 mile
+                         </div>
+                        </div>
+                        <div>
+                            <div class="item" id="item2">
+                                Conversion factor
+                   </div>
+                 <div class="item">
+                    0.083 foot
+                       </div>
+                         <div class="item">
+                            12 inches
+                           </div>
+                           <div class="item">
+                            3 feet	
+                           </div>
+                           <div class="item">
+                            1760 yards
+                           </div>
+                          </div>
+                          <div>
+                            <div class="item">
+                                Conversions to the basic unit of length, i.e. m
+                   </div>
+                 <div class="item">
+                    0.0254 m
+                       </div>
+                         <div class="item">
+                            0.3048 m
+                           </div>
+                           <div class="item">
+                            0.9144 m	
+                           </div>
+                           <div class="item">
+                            1609 m
+                           </div>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
